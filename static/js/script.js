@@ -42,9 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Dark mode
-document.body.classList.add("darkmode");
-
 // Scroll to top button
 var backToTopBtn = document.getElementById("back-to-top");
 
