@@ -42,34 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Dark mode toggle
-let darkMode = localStorage.getItem("darkMode");
-const darkModeToggle = document.querySelectorAll("#dark-mode-toggle");
-
-const enableDarkMode = () => {
-  document.body.classList.add("darkmode");
-  localStorage.setItem("darkMode", "enabled");
-};
-
-const disableDarkMode = () => {
-  document.body.classList.remove("darkmode");
-  localStorage.setItem("darkMode", null);
-};
-
-if (darkMode === "enabled") {
-  enableDarkMode();
-}
-
-darkModeToggle.forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    darkMode = localStorage.getItem("darkMode");
-    if (darkMode !== "enabled") {
-      enableDarkMode();
-    } else {
-      disableDarkMode();
-    }
-  });
-});
+// Dark mode
+document.body.classList.add("darkmode");
 
 // Scroll to top button
 var backToTopBtn = document.getElementById("back-to-top");

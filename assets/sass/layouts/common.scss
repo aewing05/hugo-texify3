@@ -184,28 +184,6 @@ main {
   flex-wrap: wrap;
 }
 
-.dark-mode-toggle {
-  background-color: var(--bg);
-  color: var(--fg);
-  position: absolute;
-  top: calc(((4px + $margin) / 2) + 12.55px);
-  right: $padding;
-  border: none;
-  padding: 0.5rem;
-  border-radius: $radius;
-  cursor: pointer;
-  transition: opacity 0.3s;
-
-  &:hover {
-    color: var(--fg1);
-  }
-
-  @media screen {
-    @media screen and (max-width: $mobile-breakpoint) {
-      right: calc((4px + $margin) / 2);
-    }
-  }
-}
 
 .icon {
   svg {
